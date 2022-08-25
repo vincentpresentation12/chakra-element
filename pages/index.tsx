@@ -13,6 +13,8 @@ import Checkbox from "../atoms/Checkbox"
 import InputPhone from "../atoms/InputPhone"
 import Test from "../atoms/Test"
 
+
+
 const Home: NextPage = () => {
   return (
     <Container size={"3xl"} pt={10}>

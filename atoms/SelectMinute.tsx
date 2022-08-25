@@ -1,5 +1,6 @@
 import React from "react"
-import { Select } from "@chakra-ui/react"
+import Select from "react-select/creatable"
+import { Box } from "@chakra-ui/react"
 
 const minute = [
   "00",
@@ -91,22 +92,20 @@ const minute = [
 //   )
 // }
 
-// const SelectMinute = () => {
-// //select with limited options
-//
-//
-//
-//
-//   return (
-//     <Select size={"sm"}>
-//       {minute.map((minute, index) => {
-//         return (
-//           <option key={index} value={minute}>
-//             {minute}
-//           </option>
-//         )
-//       })}
-//     </Select>
-//   )
-// }
+const SelectMinute = () => {
+  // div with scrollable options
+
+  const options = minute.map((minute, index) => {
+    return {
+      value: minute,
+      label: minute,
+    }
+  })
+
+  return (
+    <Box width={"100px"}>
+      <Select options={options} placeholder={"00"} width={"20px"}></Select>
+    </Box>
+  )
+}
 export default SelectMinute
