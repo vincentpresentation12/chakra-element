@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <h1>Hello Next.js</h1>
       {/*<InputText />*/}
       {/*<InputNumber />*/}
-      {/*<InputDate />*/}
+      <InputDate />
       {/*<InputDateTime />*/}
       <InputTime />
       {/*<Test initialTime={"18:00"} />*/}
