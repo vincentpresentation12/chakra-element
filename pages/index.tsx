@@ -12,8 +12,7 @@ import InputTime from "../atoms/InputTime"
 import Checkbox from "../atoms/Checkbox"
 import InputPhone from "../atoms/InputPhone"
 import Test from "../atoms/Test"
-
-
+import SelectHour from "../atoms/SelectHour"
 
 const Home: NextPage = () => {
   return (
@@ -23,8 +22,8 @@ const Home: NextPage = () => {
       {/*<InputNumber />*/}
       {/*<InputDate />*/}
       {/*<InputDateTime />*/}
-      {/*<InputTime />*/}
-      <Test initialTime={"18:00"} />
+      <InputTime />
+      {/*<Test initialTime={"18:00"} />*/}
       {/*<InputFile />*/}
       {/*<Checkbox />*/}
       {/*<InputTextArea />*/}

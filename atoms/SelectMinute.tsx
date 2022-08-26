@@ -1,7 +1,33 @@
 import React from "react"
 import Select from "react-select/creatable"
-import { Box } from "@chakra-ui/react"
+import { Box, FormControl } from "@chakra-ui/react"
 
+const hour = [
+  "00",
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "09",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+  "21",
+  "22",
+  "23",
+]
 const minute = [
   "00",
   "01",
@@ -92,6 +118,13 @@ const minute = [
 //   )
 // }
 
+const customStyles = {
+  option: (provided: any, state: any) => ({
+    ...provided,
+    color: "black",
+  }),
+}
+
 const SelectMinute = () => {
   // div with scrollable options
 
@@ -104,7 +137,11 @@ const SelectMinute = () => {
 
   return (
     <Box width={"100px"}>
-      <Select options={options} placeholder={"00"} width={"20px"}></Select>
+      <Select
+        options={options}
+        placeholder={"00"}
+        styles={customStyles}
+      ></Select>
     </Box>
   )
 }
